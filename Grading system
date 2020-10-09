@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{	int g=0;
+	printf("Enter your score here:");
+	scanf("%d", &g);
+	
+	if(g>=85 && g<=100)
+	{
+		printf("Grade A!");
+	}
+	
+	else if(g>=70 && g<=84)
+	{
+		printf("Grade B!");
+    }
+	else if(g>=55 && g<=69)
+	{
+		printf("Grade C!");
+	}
+	else if(g>=40 && g<=54)
+	{
+		printf("Grade D!");
+	}
+	else if(g<=39)
+	{
+		printf("Grade F!");
+	}
+	else
+	{
+		printf("Invalid input!!!");
+	}
+	return 0;
+}
